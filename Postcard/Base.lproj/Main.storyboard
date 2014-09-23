@@ -22,14 +22,6 @@
                                     <rect key="frame" x="188" y="139" width="116" height="83"/>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Ix-2kA">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="230" width="282" height="30"/>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kitteh" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyM-av-Kmc">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -38,6 +30,19 @@
                                     <rect key="frame" x="22" y="268" width="282" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-WA-nEc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20188995414394384" green="0.0" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="185" width="144" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stupidSendButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EEw-jh-KKq"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kitteh" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-FG-AHX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -52,48 +57,55 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="285" height="59"/>
+                                    <rect key="frame" x="16" y="103" width="288" height="28"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-WA-nEc">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.20188995414394384" green="0.0" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Send">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-cD-rzx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="185" width="144" height="30"/>
+                                    <rect key="frame" x="22" y="72" width="282" height="33"/>
                                 </variation>
-                                <connections>
-                                    <action selector="stupidSendButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EEw-jh-KKq"/>
-                                </connections>
-                            </button>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Ix-2kA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="230" width="282" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pG2-wA-AOd"/>
-                                <exclude reference="QKw-Ix-2kA"/>
                                 <exclude reference="qyM-av-Kmc"/>
+                                <exclude reference="QWm-WA-nEc"/>
                                 <exclude reference="SGM-FG-AHX"/>
                                 <exclude reference="PFs-Wi-r6m"/>
-                                <exclude reference="QWm-WA-nEc"/>
+                                <exclude reference="F2T-cD-rzx"/>
+                                <exclude reference="QKw-Ix-2kA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pG2-wA-AOd"/>
-                                <include reference="QKw-Ix-2kA"/>
                                 <include reference="qyM-av-Kmc"/>
+                                <include reference="QWm-WA-nEc"/>
                                 <include reference="SGM-FG-AHX"/>
                                 <include reference="PFs-Wi-r6m"/>
-                                <include reference="QWm-WA-nEc"/>
+                                <include reference="F2T-cD-rzx"/>
+                                <include reference="QKw-Ix-2kA"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="labelName" destination="F2T-cD-rzx" id="jnN-5x-MZG"/>
                         <outlet property="mailButton" destination="QWm-WA-nEc" id="7me-mU-brE"/>
                         <outlet property="stupidKittehTextField" destination="SGM-FG-AHX" id="5FB-fw-0Jh"/>
                         <outlet property="stupidLabel" destination="PFs-Wi-r6m" id="4LK-Nq-77K"/>

@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var stupidKittehTextField: UITextField!
     
+    @IBOutlet weak var labelName: UILabel!
+    
     @IBOutlet weak var mailButton: UIButton!
     
     override func viewDidLoad() {
@@ -34,6 +36,14 @@ class ViewController: UIViewController {
         stupidKittehTextField.text = ""
         stupidKittehTextField.resignFirstResponder()
         stupidLabel.textColor = UIColor.redColor()
+        
+        // Name Label
+        labelName.hidden = false
+        labelName.text = stupidNameTextField.text
+        stupidNameTextField.text = ""
+        stupidNameTextField.resignFirstResponder()
+        labelName.textColor = UIColor.blueColor()
+        
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }
 
