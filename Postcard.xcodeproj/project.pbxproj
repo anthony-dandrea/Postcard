@@ -13,6 +13,8 @@
 		6E58E04D19CB95D300910361 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E58E04C19CB95D300910361 /* Images.xcassets */; };
 		6E58E05019CB95D300910361 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E58E04E19CB95D300910361 /* LaunchScreen.xib */; };
 		6E58E05C19CB95D300910361 /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E58E05B19CB95D300910361 /* PostcardTests.swift */; };
+		6E6E50FE19CBA83A00F2298C /* fucky.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6E6E50FD19CBA83A00F2298C /* fucky.gif */; };
+		6E6E510019CBACB200F2298C /* uNwCs42.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6E6E50FF19CBACB200F2298C /* uNwCs42.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		6E58E05519CB95D300910361 /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E58E05A19CB95D300910361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E58E05B19CB95D300910361 /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		6E6E50FD19CBA83A00F2298C /* fucky.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fucky.gif; sourceTree = "<group>"; };
+		6E6E50FF19CBACB200F2298C /* uNwCs42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = uNwCs42.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		6E58E04319CB95D300910361 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E6E50FF19CBACB200F2298C /* uNwCs42.gif */,
+				6E6E50FD19CBA83A00F2298C /* fucky.gif */,
 				6E58E04419CB95D300910361 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6E510019CBACB200F2298C /* uNwCs42.gif in Resources */,
 				6E58E04B19CB95D300910361 /* Main.storyboard in Resources */,
 				6E58E05019CB95D300910361 /* LaunchScreen.xib in Resources */,
 				6E58E04D19CB95D300910361 /* Images.xcassets in Resources */,
+				6E6E50FE19CBA83A00F2298C /* fucky.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				6E58E06119CB95D300910361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E58E06219CB95D300910361 /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				6E58E06419CB95D300910361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
